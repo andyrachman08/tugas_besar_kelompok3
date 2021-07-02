@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tugasbesar/HomeScreen.dart';
+import 'package:tugasbesar/splashscreen/Splashscreen.dart';
 import 'package:tugasbesar/warna.dart';
 
 void main() {
@@ -12,14 +13,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Alas Kaki',
+      title: 'Tabungan Qu',
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
         primaryColor: kPrimaryColor,
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
